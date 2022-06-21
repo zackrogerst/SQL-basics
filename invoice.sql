@@ -20,6 +20,12 @@ SELECT *
 FROM invoice
 WHERE total > 5;
 
+SELECT *
+FROM invoice
+  JOIN invoice_line
+    ON invoice.invoice_id = invoice_line.invoice_id;
+    WHERE unit_price = 5;
+
 ------------step 6.5
 
 SELECT COUNT(*)
